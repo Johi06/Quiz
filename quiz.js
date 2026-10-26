@@ -21,6 +21,7 @@ let questions = [
     correctAnswer: 3
     },
 ]
+
 function displayQuestion(){
 
     if(currentQuestionIndex >= questions.length){
