@@ -1,0 +1,36 @@
+<html>
+    <header>
+        <title>Java Script Quiz</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    </header>
+
+    <body class="container d-flex justify-conentent-center align-items-center p-3 mb-2 bg-muted-inverse fg-inverse">
+        <div id="quiz-container" class="card p-3 mb-2 bg-muted-accent fg-accent">
+
+            <div class="card-header">
+                <h1 id="question"></h1>
+            </div>
+
+            <div class="card-body">
+                <div id="answers"></div>
+            </div>
+
+            <div class="card-footer">
+                <button id="next question" class="btn-subtle theme-primary" onclick="nextQuestion()">Nächste Frage</button>
+            </div>
+        </div>
+        <div id="result" hidden="true" class="card p-3 mb-2 bg-muted-accent fg-accent">
+
+            <div class="card-header">
+                <h1>Quiz beendet!</h1>
+            </div>
+
+            <div class="card-body">
+                <p>Deine Punktzahl:<span id="score"></span></p>
+            </div>
+        </div>
+    </body>
+
+    <script src="quiz.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</html>
